@@ -1,6 +1,6 @@
 # Meu Site Pessoal 🌐
 
-Bem-vindo ao repositório do meu site pessoal! Este projeto é uma plataforma para apresentar meu perfil profissional, compartilhar meu currículo, exibir uma galeria dos meus projetos e fornecer uma visão completa sobre mim e minhas habilidades. Acesse o site [aqui](https://devcassidori.com.br).
+Bem-vindo ao repositório do meu site pessoal! Este projeto é uma plataforma para apresentar meu perfil profissional, compartilhar meu currículo, exibir uma galeria dos meus projetos e fornecer uma visão completa sobre mim e minhas habilidades. Acesse o site [aqui](http://devcassidori.com.br).
 
 ## 📑 Sobre o Projeto
 
