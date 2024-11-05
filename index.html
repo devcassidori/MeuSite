@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <title>
+    </LC>
+  </title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo-LC.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Lucas Cassidori" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Lucas Cassidori">Lucas Cassidori</h1>
+
+          <p class="title">Jr. Software Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <a style="color: var(--vegas-gold);" target="_blank" href="mailto:devcassidori@gmail.com"><ion-icon
+                  name="mail-outline"></ion-icon></a>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a target="_blank" href="mailto:devcassidori@gmail.com" class="contact-link">devcassidori@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <a target="_blank" style="color: var(--vegas-gold);" href="https://wa.me/5511986773822"><ion-icon
+                  name="phone-portrait-outline"></ion-icon></a>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Telefone</p>
+
+              <a target="_blank" href="https://wa.me/5511986773822" class="contact-link">(11)98677-3822</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <a target="_blank" href="https://imagine.gsfc.nasa.gov/hst_bday/february-28"><ion-icon style="color: var(--vegas-gold);" name="calendar-outline"></ion-icon></a>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Aniverssário</p>
+
+              <a target="_blank" href="https://imagine.gsfc.nasa.gov/hst_bday/february-28"><time
+                  datetime="1997-02-28">28/Fevereiro</time></a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <a  style="color: var(--vegas-gold);" target="_blank"
+                href="https://maps.app.goo.gl/itzsDbzXota3VTb6A"><ion-icon name="location-outline"></ion-icon></a>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Localidade</p>
+
+              <a target="_blank" href="https://maps.app.goo.gl/itzsDbzXota3VTb6A">
+                <address>São Paulo - SP, Brasil</address>
+              </a>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/lucascassidori/" target="_blank" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/devcassidori" target="_blank" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/lucassidori/" target="_blank" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>Sobre</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Currículo</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projetos</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #SOBRE
+      -->
+
+      <article class="sobre  active" data-page="sobre">
+
+        <header>
+          <h2 class="h2 article-title">Sobre</h2>
+        </header>
+
+        <section class="sobre-text">
+          <p>
+            Sou um engenheiro da computação me especializando em engenharia de software com foco em desenvolvimento full
+            stack. Com sólida experiência em projetos front-end e back-end, domino linguagens como C#, .NET, Java,
+            Python, JavaScript e frameworks como Angular e React. Tenho amplo conhecimento em tecnologias web e gestão
+            de bancos de dados, além de experiência em arquiteturas de nuvem e versionamento de código.
+            <br>
+            Valorizo a comunicação eficaz e o trabalho em equipe, acreditando que esses elementos são cruciais para o
+            sucesso de qualquer projeto. Estou sempre em busca de novos desafios que me permitam crescer e inovar,
+            mantendo o compromisso com soluções eficientes e escaláveis.
+            <br>
+            Nos meus hobbies, sou praticante de jiu-jitsu brasileiro pela equipe Alliance, onde sou faixa azul. Também
+            gosto de jogar videogame e me divertir com jogos com minha família, como: truco, uno e dominó.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Habilidades</h3>
+          <h4 class="h4 service-title">Front-end:</h4>
+          <div class=" marquee marquee--10">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML"
+              height="80" class="marquee__item" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS"
+              height="80" class="marquee__item" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+              alt="BootStrap" height="80" class="marquee__item" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+              alt="Tailwind" height="80" class="marquee__item" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" alt="Sass"
+              height="80" class="marquee__item" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+              alt="JavaScript" height="80" class="marquee__item" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+              alt="TypeScript" height="80" class="marquee__item" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original-wordmark.svg"
+              alt="jQuery" height="80" class="marquee__item" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg"
+              alt="Angular" height="80" class="marquee__item" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" height="80" class="marquee__item" />
+          </div>
+          <h4 class="h4 service-title">Back-end:</h4>
+          <div  class="onze marquee marquee--10 reverse">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="C" height="80"
+            class="marquee__item" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
+            alt="C++" height="80" class="marquee__item" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="C#"
+            height="80" class="marquee__item" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original-wordmark.svg"
+            alt=".NET" height="80" class="marquee__item" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java"
+            height="80" class="marquee__item" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python"
+            height="80" class="marquee__item" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"alt="Node" height="80" class="marquee__item" />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original-wordmark.svg"
+              alt="SQL Server" height="80" class="marquee__item" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
+              alt="MySQL" height="80" class="marquee__item" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git"
+              height="80" class="marquee__item" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub"
+              height="80" class="marquee__item" />
+          </div>
+          <h4 class="h4 service-title">Outros:</h4>
+          <div class="marquee marquee--10">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+              alt="AWS" height="80" class="marquee__item" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" alt="Azure"
+              height="80" class="marquee__item" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/arduino/arduino-original.svg"
+              alt="Arduino" height="80" class="marquee__item" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma"
+              height="80" class="marquee__item" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gimp/gimp-original.svg" alt="Gimp"
+              height="80" class="marquee__item" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/inkscape/inkscape-original.svg"
+              alt="Inkscape" height="80" class="marquee__item" />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/stackoverflow/stackoverflow-original.svg"
+              alt="StackOverFlow" height="80" class="marquee__item" />
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unifiedmodelinglanguage/unifiedmodelinglanguage-original.svg"
+              alt="UML" height="80" class="marquee__item" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux"
+              height="80" class="marquee__item" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows8/windows8-original.svg"
+              alt="Windows" height="80" class="marquee__item" />
+          </div>
+
+        </section>
+
+
+
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </section>
+
+        </div>
+
+
+
+      </article>
+      <!--
+        - #Curriculo
+      -->
+
+      <article class="currículo" data-page="currículo">
+
+        <header>
+          <h2 class="h2 article-title">Currículo
+            <a target="_blank" style="margin-top: 1px; margin-bottom: 2px;" id="cvdownload" href="assets/CV Lucas Cassidori.pdf"
+              download="Currículo Lucas Cassidori">
+              Download <ion-icon name="download-outline"></ion-icon>
+            </a>
+          </h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Escolaridade</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">
+                Engenharia da Computação<br>
+                <small>Universidade São Judas Tadeu</small>
+              </h4>
+
+
+              <span>Ago/2017 — Dez/2024</span>
+
+              <p class="timeline-text">
+                Ao longo da minha graduação desenvolvi uma forte base em programação, modelagem e simulação de sistemas
+                complexos. Aprendi a aplicar conceitos de física, eletrônica e materiais em projetos práticos, além de
+                dominar técnicas de análise de dados e inteligência artificial. <br>
+                Também adquiri habilidades em administração de operações e gestão de qualidade, o que me preparou para
+                integrar soluções tecnológicas de ponta.<br>
+                O curso me proporcionou a capacidade de criar e implementar sistemas digitais e microcontroladores,
+                permitindo-me enfrentar desafios tecnológicos com confiança e inovação. <br>
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experiência</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Analista de desenvolvimento Júnior <br>
+                <small>Tata Consultancy Services</small>
+              </h4>
+
+              <span>Jul/2023 — Set/2023</span>
+
+              <p class="timeline-text">
+                • Trabalhei em uma equipe de desenvolvimento ágil, utilizando a Metodologia Agile para entregar soluções
+                de software de alta qualidade em um ambiente de DevOps. <br>
+                • Desenvolvi aplicações web robustas usando .NET, C#, ASP.NET, e o padrão MVC. <br>
+                • Utilizei HTML, CSS e JavaScript para criar interfaces de usuário intuitivas e responsivas. <br>
+                • Implementei o Entity Framework para manipulação de dados e interação com o Microsoft SQL Server. <br>
+                • Usei GitHub e GitLab para controle de versão e colaboração em equipe.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Trainee <br>
+                <small>Tata Consultancy Services</small>
+              </h4>
+
+              <span>Jul/2022 — Jul/2023</span>
+
+              <p class="timeline-text">
+                • Ganhei experiência prática com o ciclo de vida completo do desenvolvimento de software, desde a
+                concepção até a implantação. <br>
+                • Colaborei com a equipe de desenvolvimento para criar e otimizar aplicações .NET. <br>
+                • Usei Git para controle de versão e trabalhei em um ambiente de DevOps. <br>
+                • Ganhei experiência com Metodologia Agile, participando de sprints, stand-ups diários e retrospectivas.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Estagiário <br>
+                <small>Tata Consultancy Services</small>
+              </h4>
+
+              <span>Abr/2022 - Jul/2022</span>
+
+              <p class="timeline-text">
+                • Contribuí para o desenvolvimento de software, melhorando a funcionalidade do site e corrigindo bugs.
+                <br>
+                • Desenvolvi e implementei componentes front-end usando HTML, CSS e JavaScript. <br>
+                • Colaborei com a equipe de desenvolvimento em um ambiente Ágil.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="library-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Cursos</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">
+                DevOps & Agile Culture<br>
+              </h4>
+              <span>FIAP</span>
+
+              <p class="timeline-text">
+                Nesse curso, aprendi como o DevOps integra automação e colaboração para otimizar o ciclo de vida do
+                software com práticas como CI/CD e infraestrutura como código. Aprofundei-me em Metodologias Ágeis,
+                usando Scrum e Kanban para entregas contínuas e mensurando o desempenho com métricas ágeis. Também
+                aprendi a usar UML e Casos de Uso para traduzir requisitos em diagramas visuais, melhorando a
+                comunicação e o planejamento.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">
+                Git e Github Essencial para o Desenvolvedor
+              </h4>
+              <span>Geek University</span>
+
+              <p class="timeline-text">
+                Nesse curso, aprendi a dominar o controle de versões com Git, desde a criação e clonagem de repositórios
+                até o gerenciamento de branches, commits e merges. Entendi como utilizar o GitHub para colaborar com
+                equipes, fazer pull requests, resolver conflitos e gerenciar projetos open-source.
+              </p>
+
+            </li>
+
+            <span style="display: flex; align-items: center; justify-content: center;" id="dotsCursos"></span>
+
+            <div class="revela" id="moreCursos" >
+              <li class="timeline-item"></li>
+
+              <h4 class="h4 timeline-item-title">
+                Métodos ágeis com foco na gestão de projetos
+              </h4>
+              <span>Centro Universitário Una</span>
+
+              <p class="timeline-text">
+                Nesse curso, aprendi como aplicar práticas ágeis para melhorar a eficiência das equipes, gerenciar
+                cronogramas de forma flexível e promover entregas iterativas. Além disso, aprendi a importância de
+                métricas ágeis, como velocidade e lead time, para monitorar o progresso e adaptar o planejamento de
+                acordo com mudanças de requisitos e prioridades, sempre com foco em valor contínuo para o cliente.
+                Explorando frameworks com Scrum e Kanban.
+              </p>
+
+              </li>
+
+              <li class="timeline-item"></li>
+
+              <h4 class="h4 timeline-item-title">
+                Programação em Python para Sistemas
+              </h4>
+              <span>Senai PR</span>
+
+              <p class="timeline-text">
+                Nesse curso, aprendi a desenvolver sistemas utilizando Python, explorando desde a estrutura básica da
+                linguagem até a criação de aplicações complexas. O foco esteve na programação orientada a objetos,
+                manipulação de arquivos, tratamento de exceções e integração com bancos de dados. Ao final, adquiri a
+                habilidade de criar sistemas robustos e escaláveis, aplicando boas práticas de programação e padrões de
+                design.
+              </p>
+
+              </li>
+
+              <li class="timeline-item"></li>
+
+              <h4 class="h4 timeline-item-title">
+                Java Foundations
+              </h4>
+              <span>Oracle</span>
+
+              <p class="timeline-text">
+                Nesse curso, aprendi os conceitos fundamentais da linguagem Java, como estrutura de classes, métodos,
+                tipos de dados e controle de fluxo. O curso abordou também a orientação a objetos, com foco em herança,
+                encapsulamento, polimorfismo e interfaces. Além disso, explorei o uso de bibliotecas padrão, manipulação
+                de coleções, exceções e introdução ao desenvolvimento de aplicações desktop e web com Java.
+              </p>
+
+              </li>
+            </div>
+            <br>
+            <div style="display: flex; justify-content: center;">
+              <button onclick="verMaisCursos()" id="verMaisCursos">ver mais...</button>
+            </div>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="chatbubbles-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Idiomas</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">
+                Inglês
+              </h4>
+              <span>Intermediário - B2</span>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">
+                Português - BR
+              </h4>
+              <span>Nativo</span>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="Projetos" data-page="projetos">
+
+        <header>
+          <h2 class="h2 article-title">Projetos</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul style="display: none;" class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div style="display: none;" class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul style="display: none;" class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a target="_blank" href="https://devcassidori.github.io/MemoryGame/">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/MemoryGame.png" alt="MemoryGame" loading="lazy">
+                </figure>
+
+              </a>
+              <br>
+              <div>
+                <h3 class="project-title">Jogo da Memória</h3>
+                <p class="project-category">Um jogo da memória simples com o objetivo é encontrar todos os pares de figuras dentro do limite de tempo de 120 segundos.</p>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a target="_blank" href="https://devcassidori.github.io/GeradorQRcode/">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/QRcode.png" alt="GeradorQRcode" loading="lazy">
+                </figure>
+
+              </a>
+              <br>
+              <div>
+                <h3 class="project-title">Gerador de QR Code</h3>
+                <p class="project-category">Uma aplicação que gera QR Codes personalizados a partir de URLs ou textos fornecidos pelo usuário.</p>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a target="_blank" href="https://devcassidori.github.io/ConversorMoedas/">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/ConversorMoeda.png" alt="ConversorMoeda" loading="lazy">
+                </figure>
+
+              </a>
+              <br>
+              <div>
+                <h3 class="project-title">Conversor de moedas</h3>
+                <p class="project-category">Uma aplicação web simples que converte valores entre diferentes moedas em tempo real usando taxas de câmbio atualizadas.</p>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a target="_blank" href="https://devcassidori.github.io/2048-Web-Game/">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/2048.png" alt="2048" loading="lazy">
+                </figure>
+
+              </a>
+              <br>
+              <div>
+                <h3 class="project-title">2048</h3>
+                <p class="project-category">Um jogo de lógica e raciocínio cujo objetivo é combinar blocos de números iguais até atingir o número 2048.</p>
+              </div>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a target="_blank" href="https://devcassidori.github.io/MyList/">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/MyList.png" alt="MyList" loading="lazy">
+                </figure>
+
+              </a>
+              <br>
+              <div>
+                <h3 class="project-title">My List</h3>
+                <p class="project-category">Uma aplicação de lista de tarefas simples e intuitiva com funcionalidades de adicionar, remover e marcar tarefas como concluídas.</p>
+              </div>
+            </li>
+            
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a target="_blank" href="https://devcassidori.github.io/TicTacToe/">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/TicTacToe.png" alt="TicTacToe" loading="lazy">
+                </figure>
+
+              </a>
+              <br>
+              <div>
+                <h3 class="project-title">Tic Tac Toe</h3>
+                <p class="project-category">Um jogo da velha interativo e online, onde dois jogadores se enfrentam em tempo real.</p>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
