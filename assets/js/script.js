@@ -167,11 +167,30 @@ function verMaisCursos() {
 
   if (dots.style.display === "none") {
     dots.style.display = "inline";
-    btnText.innerHTML = "ver mais..."; 
+    btnText.innerHTML = "ver mais...";
     moreText.style.display = "none";
   } else {
     dots.style.display = "none";
-    btnText.innerHTML = "...ver menos"; 
+    btnText.innerHTML = "...ver menos";
     moreText.style.display = "inline";
   }
 }
+
+// Funcionalidade para pausar carrossel no hover
+const marqueeContainers = document.querySelectorAll('.marquee');
+
+marqueeContainers.forEach(marquee => {
+  const marqueeItems = marquee.querySelectorAll('.marquee__item');
+
+  marquee.addEventListener('mouseenter', function () {
+    marqueeItems.forEach(item => {
+      item.style.animationPlayState = 'paused';
+    });
+  });
+
+  marquee.addEventListener('mouseleave', function () {
+    marqueeItems.forEach(item => {
+      item.style.animationPlayState = 'running';
+    });
+  });
+});
